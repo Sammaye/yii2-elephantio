@@ -1,5 +1,5 @@
 <?php
-namespace common\components;
+namespace sammaye\elephantio;
 
 use yii\base\Component;
 use ElephantIO\Client;
