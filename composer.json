@@ -1,0 +1,20 @@
+{
+	"name": "sammaye/yii2-elephantio",
+	"description": "A plugin for using Elephant IO with Yii2",
+	"keywords": ["yii2", "framework", "elephantio", "socket", "websocket"],
+	"homepage": "http://www.sammaye.wordpress.com/",
+	"type": "project",
+	"license": "BSD-3-Clause",
+	"support": {
+		"issues": "https://github.com/Sammaye/yii2-elephantio/issues",
+		"source": "https://github.com/Sammaye/yii2-elephantio"
+	},
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">=5.4.0",
+		"wisembly/elephant.io": "*"
+	},
+	"autoload": {
+		"psr-4": {"sammaye\\elephantio\\": ""}
+	}
+}
