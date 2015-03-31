@@ -9,6 +9,8 @@ class ElephantIo extends Component
 {
 	public $host = 'http://localhost:3000';
 	
+	public $options = [];
+	
 	private $_client;
 	
 	
@@ -16,7 +18,7 @@ class ElephantIo extends Component
 	{
 		parent::init();
 		
-		$this->_client = new Client(new Version1X($this->host));
+		$this->_client = new Client(new Version1X($this->host, $this->options));
 		$this->_client->initialize();
 	}
 	
