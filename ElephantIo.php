@@ -18,7 +18,9 @@ class ElephantIo extends Component
 	{
 		parent::init();
 		
-		$this->_client = new Client(new Version1X($this->host, $this->options));
+		$host = $this->host;
+		
+		$this->_client = new Client(new Version1X(is_callable($host) ? $host() : $host, $this->options));
 		$this->_client->initialize();
 	}
 	
