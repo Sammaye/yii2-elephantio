@@ -9,7 +9,6 @@
 		"issues": "https://github.com/Sammaye/yii2-elephantio/issues",
 		"source": "https://github.com/Sammaye/yii2-elephantio"
 	},
-	"minimum-stability": "dev",
 	"require": {
 		"php": ">=5.4.0",
 		"wisembly/elephant.io": "*"
