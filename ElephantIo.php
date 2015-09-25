@@ -24,8 +24,11 @@ class ElephantIo extends Component
 		$this->_client->initialize();
 	}
 	
-	public function emit($event, $params = [])
+	public function emit($event, $params = [], $namespace = '/')
 	{
+		if(method_exists ($this->_client,'of'))    
+                        $this->_client->of($namespace);  
+                        
 		return $this->_client->emit($event, $params);
 	}
 	
