@@ -11,7 +11,7 @@
 	},
 	"require": {
 		"php": ">=5.4.0",
-		"wisembly/elephant.io": "*"
+		"elephantio/elephant.io": "^4.7"
 	},
 	"autoload": {
 		"psr-4": {"sammaye\\elephantio\\": ""}

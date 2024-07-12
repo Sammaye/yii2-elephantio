@@ -3,7 +3,6 @@ namespace sammaye\elephantio;
 
 use yii\base\Component;
 use ElephantIO\Client;
-use ElephantIO\Engine\SocketIO\Version2X;
 
 class ElephantIo extends Component
 {
@@ -20,8 +19,8 @@ class ElephantIo extends Component
 
 		$host = $this->host;
 
-		$this->_client = new Client(new Version2X(is_callable($host) ? $host() : $host, $this->options));
-		$this->_client->initialize();
+		$this->_client = Client::create($host, $this->options);
+		$this->_client->connect();
 	}
 
 	public function emit($event, $params = [], $namespace = null)
